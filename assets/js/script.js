@@ -170,18 +170,16 @@ switch (true) {
 		break;
 }
 
-// const numbers10 = [];
+const numbers10 = [];
 
-// for (let i = 0; i < 12; i++) {
-// 	let casualNum = Math.floor(Math.random() * 11);
-// 	if (!numbers10.includes(casualNum)) {
-// 		numbers10.push(casualNum);
-// 	} else {
-//         i = i - 1;
-//     }
-// }
+while (numbers10.length < 11) {
+	let casualNum = Math.floor(Math.random() * 11);
+	if (!numbers10.includes(casualNum)) {
+		numbers10.push(casualNum);
+	}
+}
 
-// console.log(numbers10);
+console.log(numbers10.sort());
 
 const linkInterno = document.querySelector('.container a');
 const title = document.querySelector('#title');
